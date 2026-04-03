@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5001;
 const GEMINI_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = "gemini-2.5-flash";
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors());
 app.use(express.json());
 
 if (!GEMINI_KEY) {
